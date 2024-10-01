@@ -47,3 +47,4 @@ const CreacionReserva =()=>{
         </form>
     )
 }
+export default CreacionReserva;
