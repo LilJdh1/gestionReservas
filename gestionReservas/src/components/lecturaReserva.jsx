@@ -1,7 +1,8 @@
 import React,{useEffect,useState} from "react";
-import { collection, getDocs, addDoc, deleteDoc, updateDoc, doc, onSnapshot, snapshotEqual } from "firebase/firestore";
-import { db } from "../firebase/firebaseConfig";
+import { getFirestore } from "firebase/firestore";
+import {app } from "../firebase/firebaseConfig";
 
+const db= getFirestore;
 const LecturaReserva =()=>{
     const [lectura, setLectura]= useState([]);
     useEffect (()=>{

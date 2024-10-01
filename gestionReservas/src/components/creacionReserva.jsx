@@ -27,9 +27,9 @@ const CreacionReserva =()=>{
         }
     };
     return(
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleEnvio}>
             <label>Nombre del cliente</label>
-            <input type="text" value={nombre} onChange={(e) => setName(e.target.value)}/>
+            <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)}/>
             <br/>
             <label>Numero de personas</label>
             <input type="number" value={numeroDePersonas} onChange={(e) => setNumeroDePersonas(e.target.value)}/>
